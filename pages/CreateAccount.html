@@ -1,0 +1,19 @@
+<div class="login-card">
+    <h2>Create Account</h2>
+    <!--MESSAGE-->
+    <p>Username must contain only letters and digits.<br>
+    Password must be 4+ characters, with at least one letter and one digit.</p>
+    <form action="/CreateAccount" method="POST" id="createaccount">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="checkbox-container">
+        <input type="checkbox" onclick="showPassword()"> Show Password
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>

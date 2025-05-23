@@ -1,0 +1,58 @@
+<h2>Have a Pet to Give Away</h2>
+<!--MESSAGE-->
+<form action="/submitPetGiveaway" method="POST" id = "petGiveawayForm" onsubmit="return validateForm(event)">
+    <label for="animal">Select an Animal:</label>
+    <select id="animal" name="animal">
+        <option value="" disabled selected>...</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+    </select>
+
+    <label for="breed">Breed:</label>
+    <select id="breed" name="breed">
+        <option value="" disabled selected>...</option>
+        <option value="Labrador">Labrador</option>
+        <option value="Bulldog">Bulldog</option>
+        <option value="Persian">Persian (Cat)</option>
+        <option value="Siamese">Siamese (Cat)</option>
+    </select>
+
+    <label for="age">Age:</label>
+    <select id="age" name="age">
+        <option value="" disabled selected>...</option>
+        <option value="Puppy">Puppy/Kitten</option>
+        <option value="Adult">Adult</option>
+        <option value="Senior">Senior</option>
+    </select>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="" disabled selected>...</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    
+    <label>Compatibility:</label>
+    <div class="Checkboxes">
+        <input type="checkbox" name="compatibility[]" value="Dogs"> Gets along with other dogs<br>
+        <input type="checkbox" name="compatibility[]" value="Cats"> Gets along with other cats<br>
+        <input type="checkbox" name="compatibility[]" value="Children"> Suitable for families with small children<br>
+        <input type="checkbox" name="compatibility[]" value="Birds"> Gets along with birds<br>
+    </div>
+
+    <label for="comments">Brag About Your Pet:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Describe your pet's personality and qualities..."></textarea>
+
+    <label for="owner-name">Your Name:</label>
+    <input type="text" name="ownerName" id="owner-name" value = '' placeholder="First and Last Name">
+
+    <label for="owner-email">Your Email:</label>
+    <input type="text" name="ownerEmail" id="owner-email" value = '' placeholder="Email Address">
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </div>
+</form>
+<p id="error-message"></p>
+

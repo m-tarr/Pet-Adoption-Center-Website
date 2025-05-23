@@ -1,0 +1,73 @@
+.Content {
+    background-color: #eaf5f7; /* Soft light green */
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+  
+  .login-card {
+    background-color: #eaf5f7;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    width: 62.5%;
+    height: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #66a6ff;
+    box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
+  }
+
+  .checkbox-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .checkbox-container input {
+    margin-right: 8px;
+  }
+
+  button {
+    width: 100%;
+    background: #45aced;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #3388bd;
+  }

@@ -1,0 +1,142 @@
+/* Content Section */
+.Content {
+    width: 70%;
+    padding: 20px;
+    background-color: #f1f8e9; /* Soft light green */
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading Styles */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px; /* Reduced gap between form elements for compactness */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger for visibility */
+    color: #333; /* Darker for better contrast */
+    margin-bottom: 5px; /* Reduced margin between label and input */
+}
+
+/* Input, Select, and Textarea Styles */
+select, input, textarea {
+    width: 100%; /* Full width to create a more uniform look */
+    padding: 12px 15px; /* Increased padding for comfort */
+    margin: 5px 0; /* Reduced margin for compactness */
+    border-radius: 8px; /* Softer rounded corners */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on focus */
+    background-color: #ffffff; /* White background for clarity */
+}
+
+/* Focus Effect on Inputs */
+select:focus, input:focus, textarea:focus {
+    border-color: #88b79e; /* Highlight input on focus */
+    box-shadow: 0 0 8px rgba(136, 183, 158, 0.5); /* Soft glow effect */
+}
+
+/* Input Hover Effects */
+select:hover, input:hover, textarea:hover {
+    background-color: #f9f9f9; /* Subtle hover effect */
+    border-color: #76a682; /* Slight change in border color */
+}
+
+/* Checkbox Styles */
+.Checkboxes input {
+    width: 20px;
+}
+
+.Checkboxes input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+/* Button Styles */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 12px 20px; /* Slightly larger for comfort */
+    border: none;
+    border-radius: 8px; /* Softer rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Full width for buttons to match form layout */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #88b79e; /* Soft green for positive action */
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #76a682; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background-color: #c19483; /* Warm beige-brown for reset */
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #a17e68; /* Darker beige-brown on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/* Input Hover Effects */
+.Content input:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Smooth animation for the form */
+form {
+    animation: fadeIn 0.25s ease-in-out; /* Fade-in effect for form */
+}
+
+/* Animation Keyframe */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the error message */
+#error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ensures it spans the full width */
+    display: block; /* Makes sure it behaves like a block element */
+}

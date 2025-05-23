@@ -1,0 +1,49 @@
+<h2>Find a Dog or a Cat!</h2>
+<form id="petForm" onsubmit="return validateForm(event)" action="/searchPets" method="POST">
+    <label for="animal">Select an Animal:</label>
+    <select id="animal" name="animal" required>
+        <option value="" disabled selected>...</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+    </select>
+    
+    <label for="breed">Breed:</label>
+    <select id="breed" name="breed" required>
+        <option value="" disabled selected>...</option>
+        <option value="any">Doesn't Matter</option>
+        <option value="Labrador">Labrador</option>
+        <option value="Bulldog">Bulldog</option>
+        <option value="Persian">Persian (Cat)</option>
+        <option value="Siamese">Siamese (Cat)</option>
+    </select>
+    
+    <label for="age">Preferred Age:</label>
+    <select id="age" name="age" required>
+        <option value="" disabled selected>...</option>
+        <option value="any">Doesn't Matter</option>
+        <option value="Puppy">Puppy/Kitten</option>
+        <option value="Adult">Adult</option>
+        <option value="Senior">Senior</option>
+    </select>
+
+    <label for="gender">Preferred Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>...</option>
+        <option value="any">Doesn't Matter</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    
+    <div class="Checkboxes">
+        <label>Compatibility:</label><br>
+        <input type="checkbox" name="compatibility[]" value="Dogs"> Gets along with other dogs<br>
+        <input type="checkbox" name="compatibility[]" value="Cats"> Gets along with other cats<br>
+        <input type="checkbox" name="compatibility[]" value="Children"> Suitable for families with small children<br>
+        <input type="checkbox" name="compatibility[]" value="Birds"> Gets along with birds<br>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </div>
+</form>

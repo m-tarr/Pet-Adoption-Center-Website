@@ -1,0 +1,280 @@
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+body {
+    background-color: #fef9e4; /* Soft warm cream color for a cozy, welcoming feel */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Reusable container class for sections with padding and background */
+.container {
+    padding: 20px;
+    background-color: #ffebc8; /* Soft pastel yellow */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Header Section */
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8d5ba; /* Soft light green, calm and nurturing */
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #88b79e;
+    border-style: groove;
+    width: 100%; /* Ensure full width on smaller screens */
+}
+
+.header-title {
+    font-size: 2em; /* Make it look like an h1 */
+    font-weight: bold;
+}
+
+.TitleLogo {
+    display: flex;
+    align-items: center; /* Align logo and title horizontally */
+    gap: 20px; /* Space between logo and text */
+    text-align: left; /* Align text to the left for a professional look */
+}
+
+.TitleLogo img {
+    width: 140px;
+    height: 120px;
+}
+
+.TitleLogo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b4b4b; /* Neutral dark gray for text */
+    margin: 0;
+}
+
+/* Date-Time Styling */
+.date-time {
+    font-size: 16px;
+    font-style: italic;
+    color: #4b4b4b; /* Dark gray text */
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+    font-weight: normal; /* Prevent bold text */
+}
+
+/* Layout */
+.w3-row {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* Navigation */
+.Navigation {
+    background-color: #d0a89a; /* Warm beige-brown to create an inviting atmosphere */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.Navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Navigation ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #c19483; /* Slightly darker beige-brown border */
+}
+
+.Navigation ul li a {
+    color: white; /* White text for visibility */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.Navigation ul li:hover {
+    background-color: #c19483; /* Darker beige-brown on hover for better interaction */
+}
+
+/* Content Section */
+.Content {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffebc8; /* Soft pastel yellow for a warm, optimistic vibe */
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeInContent 0.25s forwards; /* Apply fade-in animation */
+}
+
+#home_image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Centering purposes */
+    margin: 20px auto; /* Add spacing and center */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
+}
+
+/* Image Styles */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a3c1ad; /* Trustworthy, soft light green to maintain calm vibes */
+    color: white;
+}
+
+/* Fade-In Animation for Content */
+@keyframes fadeInContent {
+    0% {
+        opacity: 0; /* Start hidden */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+/* Pet Card Layout */
+.pet-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pet-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    display: flex;
+    flex-direction: column;  /* Set flex direction to column */
+    justify-content: space-between; /* Space out the elements */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+}
+
+.pet-info {
+    padding: 15px;
+    flex-grow: 1; /* Allow pet-info to take up remaining space */
+}
+
+.pet-info h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.pet-info p {
+    margin: 5px 0;
+}
+
+.pet-info button {
+    background-color: #88b79e; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.pet-info button:hover {
+    background-color: #76a682; /* Darker green on hover */
+}
+
+/* Compatibility List Styles */
+.compatibility-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.compatibility-list li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.compatibility-list li.compatible {
+    color: #5cb558; /* Green text for compatible */
+}
+
+.compatibility-list li.not-compatible {
+    color: #e74c3c; /* Red text for not compatible */
+}
+
+/* Use custom icons for list items */
+.compatibility-list li.compatible::before {
+    content: '✔'; /* Green checkmark */
+    color: #5cb558;
+    margin-right: 10px;
+}
+
+.compatibility-list li.not-compatible::before {
+    content: '✘'; /* Red X */
+    color: #e74c3c;
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .w3-row {
+        flex-direction: column;
+    }
+
+    .Navigation {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .Header {
+        width: 100%; /* Ensure full width */
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .Content {
+        width: 100%;
+    }
+
+    .pet-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pet-card {
+        width: 100%;
+    }
+}

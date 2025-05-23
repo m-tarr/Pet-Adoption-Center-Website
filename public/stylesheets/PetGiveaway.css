@@ -1,0 +1,157 @@
+/* Content Section */
+.Content {
+    width: 70%;
+    padding: 20px;
+    background-color: #f1f8e9; /* Soft light green */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+/* Heading Styles */
+h2 {
+    color: #4b4b4b; /* Neutral dark gray for contrast */
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif; /* Modern font for headings */
+    font-size: 1.6em; /* Slightly larger for emphasis */
+}
+
+/* List Styles */
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px; /* Reduced gap between elements */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px; /* Less space between label and input */
+}
+
+/* Input, Select, and Textarea Styles */
+select, input, textarea {
+    width: 100%; /* Full width to create a more uniform look */
+    padding: 12px 15px; /* More padding for a fuller feel */
+    margin: 5px 0; /* Reduced margin for a more compact look */
+    border-radius: 8px; /* Softer rounded corners */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on focus */
+    background-color: #ffffff; /* White background for clarity */
+}
+
+select option:disabled {
+    color: #aaa; /* Light gray color for placeholder text */
+    font-style: italic; /* Optional: make the placeholder text italic */
+}
+
+/* Focus Effect on Inputs */
+select:focus, input:focus, textarea:focus {
+    border-color: #88b79e; /* Highlight input on focus */
+    box-shadow: 0 0 8px rgba(136, 183, 158, 0.5); /* Soft glow effect */
+}
+
+/* Input Hover Effects */
+select:hover, input:hover, textarea:hover {
+    background-color: #f9f9f9; /* Subtle hover effect */
+    border-color: #76a682; /* Slight change in border color */
+}
+
+/* Checkbox Styles */
+.Checkboxes input {
+    width: 20px;
+}
+
+.Checkboxes input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+/* Textarea Resize */
+textarea {
+    resize: none;
+    height: 120px; /* Set height for a better user experience */
+}
+
+/* Button Section */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Button Styles */
+/* Button Section */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Button Styles */
+input[type="submit"], input[type="reset"] {
+    padding: 12px 20px; /* Slightly larger for comfort */
+    border: none;
+    border-radius: 8px; /* Softer rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Full width for buttons to match form layout */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #88b79e; /* Soft green for positive action */
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #76a682; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background-color: #c19483; /* Warm beige-brown for reset */
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #a17e68; /* Darker beige-brown on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/* Smooth animation for the form */
+form {
+    animation: fadeIn 0.25s ease-in-out; /* Fade-in effect for form */
+}
+
+/* Animation Keyframe */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the error message */
+#error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+}
